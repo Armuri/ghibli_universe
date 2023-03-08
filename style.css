@@ -1,0 +1,318 @@
+/*************************REPERTOIRE DE COMMANDES****************/
+
+/******************************* COMMANDE A AJOUTER *************/
+
+.boxmain1 {
+  height: 15rem;
+  width: 15rem;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 1rem;
+  overflow: hidden; 
+}
+
+.texte1 {
+  padding: 1rem;
+}
+
+.texte2 {
+  background-color: royalblue;
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all ease-out.5s;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.boxmain:hover .texte2  {
+  opacity:1;
+}
+
+/*******************************LIENS***************************/
+
+
+/******************** ANIMATIONS **********************/ 
+
+
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 30%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 65%;
+  }
+}
+
+/******************************IMAGES***************************/ 
+
+
+
+/******************************TEXTE****************************/
+
+/*****************************AUTRES****************************/
+
+.button{
+  display: flex;
+    list-style: none;
+    margin-left: 40%;
+
+} 
+
+.boxmail {
+  height: 15rem;
+  width: 15rem;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 1rem;
+  overflow: hidden; 
+}
+
+.mail {
+  padding: 1rem;
+}
+
+.mail_hidden {
+  background-color: royalblue;
+  padding: .5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all ease-out.5s;
+  border-radius: 1rem;
+  overflow: scroll;
+}
+
+.boxmail:hover .mail_hidden  {
+  opacity:1;
+}
+
+/*************************FIN DE REPERTOIRE************************/
+
+
+/*****************************DEBUT SITE**************************/
+
+/*****************************HEAD********************************/
+
+html {background-color: rgb(255, 255, 255);
+font-size: 14px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+background-image: url(images/background\ ghibli.jpg)
+}
+
+h2 {
+  display: flex;
+  box-sizing: border-box; 
+  text-align: left;
+  font-weight: bold;
+  background-color: rgb(133, 225, 80);
+  width: 100%;  
+  padding: 10px;
+  margin: 1em 0;
+}
+
+dt {
+  background-color: rgb(133, 225, 80);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 10px;
+  width: 80%;
+}
+
+/*****************************HEADER****************************/
+header a {
+  color: rgb(0, 0, 0);
+  transition: all .5s ease-out;
+}
+
+header a:hover,
+
+header a :focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(123, 200, 129);
+  border-radius: 1em;
+  width: 100%;
+  font-size: 16px;
+  padding: 2%;
+}
+
+header a {
+  display: flex;
+  outline: none;
+  text-decoration: none;
+  display: inline;
+  width: 80%;
+  margin-right: 0.625%;
+  top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+
+header {background-color: rgb(133, 225, 80);
+  display: flex;
+  color: black;
+  border: 10px solid rgb(133, 225, 80);
+  border-radius: 1em;
+  border-top-right-radius: 10% 50%;
+  width: 65%;
+  justify-content: center;
+  animation : 2s slidein ;
+}
+
+h1 { 
+  text-align: center;
+  padding: 15px;
+}
+
+/*****************************NAV*********************************/
+nav a {
+  color: rgb(0, 0, 0);
+  transition: all .2s ease-out;
+}
+
+nav a:hover,
+nav a:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(123, 200, 129);
+  border-radius: 1em;
+  font-size: 18px;
+  width: 100%;
+  padding: 3%;
+}
+
+nav a {
+  display: flex;
+  outline: none;
+  text-decoration: none;
+  display: inline;
+  width: 100%;
+  margin-right: 0.625%;
+  text-align: center;
+  top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  position: sticky;
+  font: bold;
+  background-color: rgb(133, 225, 80);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: rgb(133, 225, 80);
+    border-radius: 1em;
+    padding: .5px;
+    top: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%; 
+
+  
+}
+
+nav ul {
+  display: flex;
+  text-align: center;
+  padding: 1;
+  list-style: none;
+  justify-content: space-around;
+    } 
+
+nav li {display: flex;
+    display: inline; /* alignement des termes de la balise <li> */
+        text-align: center; /* alignement du texte au centre */
+        flex: 1; /* décalage vers la droite de chaque contenu dans la balise <li>*/
+      
+      }
+/*******************************MAIN******************************/
+
+.boxmain {
+  display: flex;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+
+}
+
+main {
+  box-sizing: border-box;
+  background-color: rgb(133, 225, 80);
+  color: black;
+  border: 10px solid rgb(133, 225, 80);
+  border-radius: 1em;
+  padding : 1em;
+  margin-right: 1%;
+  }
+
+
+article {
+  background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 1em;
+    padding : 1em;
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 10px;
+    overflow: scroll;
+    }
+/********************************ASIDE*******************************/
+
+aside  {
+  text-align: center;
+  border: 1px solid rgb(133, 225, 80);
+  background-color: rgb(133, 225, 80);
+  border-radius: 1em;
+  height: fit-content;
+}
+
+aside dt {
+  border-radius: 1em;
+}
+
+aside > ul {
+  padding-left:0 ;
+} 
+/*******************************FOOTER*******************************/
+
+footer {
+  background-color: rgb(133, 225, 80);
+  border: 10px solid rgb(133, 225, 80);
+  border-radius: 1em;
+  width: 74%;
+  padding : 1em;
+  margin-top: 1%;
+
+}
+
+/************************************************MENU DEROULANT***********************/
+
+
+/************************          Taches à finir :
+
+
+- développer la barre latéral en incluant un bouton qui 
+déplie et affiche tous les films (aside)
+- mettre en forme la barre de recherche 
+- encadrer le menu accueil etc.
+- faire une page d'accueil qui regroupe tous les titres de films 
+- page 1 et page 2.
+- titrer les images/affiches du site
+- faire une table des amtière avec #fragment
+******************************************************************
+- compléter aside avec des images d'autres films (fait)
+- mettre les affiches à coté des images des films sur le site (fait)
+- mettre du contenu dans footer (fait)
+- mettre en forme le totoro (fait)
+- les liens affiché en x couleur (fait)
+- comprendre utiliser les fonctions display flex etc..(fait)
+- oublies pas y'a le pdf de l'intervenant pour aider (fait)
+*************************/
+
